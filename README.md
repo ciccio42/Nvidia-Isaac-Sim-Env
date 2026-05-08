@@ -7,6 +7,58 @@ Follow all the instructions reported [here](https://docs.isaacsim.omniverse.nvid
 
 After pull
 ```bash
+xhost +local
+docker run --name isaac-sim \
+    --entrypoint bash \
+    -it \
+    --user root \
+    --gpus all \
+    -e "ACCEPT_EULA=Y" \
+    --rm \
+    --network=host \
+    -e "PRIVACY_CONSENT=Y" \
+    -v $HOME/.Xauthority:/isaac-sim/.Xauthority \
+    -e DISPLAY \
+    -v ~/docker/isaac-sim/cache/main:/isaac-sim/.cache:rw \
+    -v ~/docker/isaac-sim/cache/computecache:/isaac-sim/.nv/ComputeCache:rw \
+    -v ~/docker/isaac-sim/logs:/isaac-sim/.nvidia-omniverse/logs:rw \
+    -v ~/docker/isaac-sim/config:/isaac-sim/.nvidia-omniverse/config:rw \
+    -v ~/docker/isaac-sim/data:/isaac-sim/.local/share/ov/data:rw \
+    -v ~/docker/isaac-sim/pkg:/isaac-sim/.local/share/ov/pkg:rw \
+    -v /home/asus-mivia/Desktop/Isaac-Sim/Nvidia-Isaac-Sim-Env/usd:/isaac-sim/usd \
+    nvcr.io/nvidia/isaac-sim:5.1.0
+
+# check if isaac-sim is ok
+./isaac-sim.sh
+```
+
+# Isaac-Sim + ROS
+```bash
+cd /home/asus-mivia/Desktop/Isaac-Sim/Nvidia-Isaac-Sim-Env
+git clone git@github.com:ciccio42/IsaacSim-ros_workspaces.git
+cd IsaacSim-ros_workspaces
+git submodule update --init --recursive
+
+./build_ros.sh -d jazzy -v 24.04
+mv build_ws /home/asus-mivia/Desktop/Isaac-Sim/Nvidia-Isaac-Sim-Env/docker
+docker run  -it \
+            --rm \
+            --net=host \
+            --env="DISPLAY" \
+            --env="ROS_DOMAIN_ID" \
+            --name ros_ws_docker \
+            isaac_sim_ros:ubuntu_24_jazzy  \
+            /bin/bash
+
+# test
+ros2 topic pub /my_topic std_msgs/msg/String "data: 'Hello World'"
+```
+
+```bash
+# Build isaac-sim against ROS2 python3.11
+cd ~/Desktop/Isaac-Sim/Nvidia-Isaac-Sim-Env/docker
+docker build -t isaac-sim-custom:5.1.0 -f isaac_sim.dockerfile .
+
 xhost +local:
 docker run --name isaac-sim \
     --entrypoint bash \
@@ -25,9 +77,45 @@ docker run --name isaac-sim \
     -v ~/docker/isaac-sim/data:/isaac-sim/.local/share/ov/data:rw \
     -v ~/docker/isaac-sim/pkg:/isaac-sim/.local/share/ov/pkg:rw \
     -v /home/asus-mivia/Desktop/Isaac-Sim/Nvidia-Isaac-Sim-Env/usd:/isaac-sim/usd \
-    -u 1234:1234 \
-    nvcr.io/nvidia/isaac-sim:5.1.0
+    isaac-sim-custom:5.1.0
 ```
+
+
+
+```bash
+cd /home/asus-mivia/Desktop/Isaac-Sim/Nvidia-Isaac-Sim-Env/docker
+docker build -t ur_ros:ubuntu_24_jazzy . -f ur_ros2.dockerfile
+
+# Run UR-ROS
+xhost +local:
+docker run --name ur_ros \
+    -it \
+    --gpus all \
+    -e "ACCEPT_EULA=Y" \
+    --rm \
+    --network=host \
+    -e "PRIVACY_CONSENT=Y" \
+    -v $HOME/.Xauthority:/isaac-sim/.Xauthority \
+    -e DISPLAY \
+    ur_ros:ubuntu_24_jazzy
+
+ros2 launch ur_description view_ur.launch.py ur_type:=ur10e
+```
+
+## Run commands
+```bash
+# 1. Run SIM
+/isaac-sim/isaac-sim.sh
+
+# 2. 
+# On a new terminal
+docker exec -it isaac-sim bash
+source /opt/ros/$ROS_DISTRO/setup.bash && source install/setup.bash
+```
+
+# Basic-Tutorial
+Link for basic tutorial - [link](https://docs.isaacsim.omniverse.nvidia.com/5.1.0/robot_setup_tutorials/index.html#isaac-sim-robot-setup-tutorials)
+
 
 # Usefull links 
 Link for demos - [link](https://docs.isaacsim.omniverse.nvidia.com/5.1.0/introduction/quickstart_index.html#isaac-sim-intro-quickstart-series)
@@ -43,12 +131,14 @@ git clone git@github.com:isaac-sim/IsaacLab.git
 ```bash
 # clone repository
 git clone git@github.com:isaac-sim/IsaacLab.git
+cd IsaacLab/
+./docker/container.py start
 ```
-
 
 
 # Usefull commands
 ```bash
 # Remove build cache
-docker builder prune
+docker builder prune 
+docker system prune
 ```

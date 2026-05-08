@@ -1,0 +1,629 @@
+- git:
+    local-name: ackermann_msgs
+    uri: https://github.com/ros2-gbp/ackermann_msgs-release.git
+    version: release/jazzy/ackermann_msgs/2.0.2-6
+- git:
+    local-name: ament_cmake/ament_cmake
+    uri: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: release/jazzy/ament_cmake/2.5.6-2
+- git:
+    local-name: ament_cmake/ament_cmake_core
+    uri: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: release/jazzy/ament_cmake_core/2.5.6-2
+- git:
+    local-name: ament_cmake/ament_cmake_export_definitions
+    uri: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: release/jazzy/ament_cmake_export_definitions/2.5.6-2
+- git:
+    local-name: ament_cmake/ament_cmake_export_dependencies
+    uri: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: release/jazzy/ament_cmake_export_dependencies/2.5.6-2
+- git:
+    local-name: ament_cmake/ament_cmake_export_include_directories
+    uri: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: release/jazzy/ament_cmake_export_include_directories/2.5.6-2
+- git:
+    local-name: ament_cmake/ament_cmake_export_interfaces
+    uri: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: release/jazzy/ament_cmake_export_interfaces/2.5.6-2
+- git:
+    local-name: ament_cmake/ament_cmake_export_libraries
+    uri: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: release/jazzy/ament_cmake_export_libraries/2.5.6-2
+- git:
+    local-name: ament_cmake/ament_cmake_export_link_flags
+    uri: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: release/jazzy/ament_cmake_export_link_flags/2.5.6-2
+- git:
+    local-name: ament_cmake/ament_cmake_export_targets
+    uri: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: release/jazzy/ament_cmake_export_targets/2.5.6-2
+- git:
+    local-name: ament_cmake/ament_cmake_gen_version_h
+    uri: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: release/jazzy/ament_cmake_gen_version_h/2.5.6-2
+- git:
+    local-name: ament_cmake/ament_cmake_gmock
+    uri: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: release/jazzy/ament_cmake_gmock/2.5.6-2
+- git:
+    local-name: ament_cmake/ament_cmake_google_benchmark
+    uri: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: release/jazzy/ament_cmake_google_benchmark/2.5.6-2
+- git:
+    local-name: ament_cmake/ament_cmake_gtest
+    uri: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: release/jazzy/ament_cmake_gtest/2.5.6-2
+- git:
+    local-name: ament_cmake/ament_cmake_include_directories
+    uri: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: release/jazzy/ament_cmake_include_directories/2.5.6-2
+- git:
+    local-name: ament_cmake/ament_cmake_libraries
+    uri: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: release/jazzy/ament_cmake_libraries/2.5.6-2
+- git:
+    local-name: ament_cmake/ament_cmake_pytest
+    uri: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: release/jazzy/ament_cmake_pytest/2.5.6-2
+- git:
+    local-name: ament_cmake/ament_cmake_python
+    uri: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: release/jazzy/ament_cmake_python/2.5.6-2
+- git:
+    local-name: ament_cmake/ament_cmake_target_dependencies
+    uri: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: release/jazzy/ament_cmake_target_dependencies/2.5.6-2
+- git:
+    local-name: ament_cmake/ament_cmake_test
+    uri: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: release/jazzy/ament_cmake_test/2.5.6-2
+- git:
+    local-name: ament_cmake/ament_cmake_vendor_package
+    uri: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: release/jazzy/ament_cmake_vendor_package/2.5.6-2
+- git:
+    local-name: ament_cmake/ament_cmake_version
+    uri: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: release/jazzy/ament_cmake_version/2.5.6-2
+- git:
+    local-name: ament_cmake_ros/ament_cmake_ros
+    uri: https://github.com/ros2-gbp/ament_cmake_ros-release.git
+    version: release/jazzy/ament_cmake_ros/0.12.0-3
+- git:
+    local-name: ament_cmake_ros/domain_coordinator
+    uri: https://github.com/ros2-gbp/ament_cmake_ros-release.git
+    version: release/jazzy/domain_coordinator/0.12.0-3
+- git:
+    local-name: ament_index/ament_index_cpp
+    uri: https://github.com/ros2-gbp/ament_index-release.git
+    version: release/jazzy/ament_index_cpp/1.8.3-1
+- git:
+    local-name: ament_index/ament_index_python
+    uri: https://github.com/ros2-gbp/ament_index-release.git
+    version: release/jazzy/ament_index_python/1.8.3-1
+- git:
+    local-name: ament_lint/ament_cmake_copyright
+    uri: https://github.com/ros2-gbp/ament_lint-release.git
+    version: release/jazzy/ament_cmake_copyright/0.17.5-1
+- git:
+    local-name: ament_lint/ament_cmake_cppcheck
+    uri: https://github.com/ros2-gbp/ament_lint-release.git
+    version: release/jazzy/ament_cmake_cppcheck/0.17.5-1
+- git:
+    local-name: ament_lint/ament_cmake_cpplint
+    uri: https://github.com/ros2-gbp/ament_lint-release.git
+    version: release/jazzy/ament_cmake_cpplint/0.17.5-1
+- git:
+    local-name: ament_lint/ament_cmake_flake8
+    uri: https://github.com/ros2-gbp/ament_lint-release.git
+    version: release/jazzy/ament_cmake_flake8/0.17.5-1
+- git:
+    local-name: ament_lint/ament_cmake_lint_cmake
+    uri: https://github.com/ros2-gbp/ament_lint-release.git
+    version: release/jazzy/ament_cmake_lint_cmake/0.17.5-1
+- git:
+    local-name: ament_lint/ament_cmake_pep257
+    uri: https://github.com/ros2-gbp/ament_lint-release.git
+    version: release/jazzy/ament_cmake_pep257/0.17.5-1
+- git:
+    local-name: ament_lint/ament_cmake_uncrustify
+    uri: https://github.com/ros2-gbp/ament_lint-release.git
+    version: release/jazzy/ament_cmake_uncrustify/0.17.5-1
+- git:
+    local-name: ament_lint/ament_cmake_xmllint
+    uri: https://github.com/ros2-gbp/ament_lint-release.git
+    version: release/jazzy/ament_cmake_xmllint/0.17.5-1
+- git:
+    local-name: ament_lint/ament_copyright
+    uri: https://github.com/ros2-gbp/ament_lint-release.git
+    version: release/jazzy/ament_copyright/0.17.5-1
+- git:
+    local-name: ament_lint/ament_cppcheck
+    uri: https://github.com/ros2-gbp/ament_lint-release.git
+    version: release/jazzy/ament_cppcheck/0.17.5-1
+- git:
+    local-name: ament_lint/ament_cpplint
+    uri: https://github.com/ros2-gbp/ament_lint-release.git
+    version: release/jazzy/ament_cpplint/0.17.5-1
+- git:
+    local-name: ament_lint/ament_flake8
+    uri: https://github.com/ros2-gbp/ament_lint-release.git
+    version: release/jazzy/ament_flake8/0.17.5-1
+- git:
+    local-name: ament_lint/ament_lint
+    uri: https://github.com/ros2-gbp/ament_lint-release.git
+    version: release/jazzy/ament_lint/0.17.5-1
+- git:
+    local-name: ament_lint/ament_lint_auto
+    uri: https://github.com/ros2-gbp/ament_lint-release.git
+    version: release/jazzy/ament_lint_auto/0.17.5-1
+- git:
+    local-name: ament_lint/ament_lint_cmake
+    uri: https://github.com/ros2-gbp/ament_lint-release.git
+    version: release/jazzy/ament_lint_cmake/0.17.5-1
+- git:
+    local-name: ament_lint/ament_lint_common
+    uri: https://github.com/ros2-gbp/ament_lint-release.git
+    version: release/jazzy/ament_lint_common/0.17.5-1
+- git:
+    local-name: ament_lint/ament_mypy
+    uri: https://github.com/ros2-gbp/ament_lint-release.git
+    version: release/jazzy/ament_mypy/0.17.5-1
+- git:
+    local-name: ament_lint/ament_pep257
+    uri: https://github.com/ros2-gbp/ament_lint-release.git
+    version: release/jazzy/ament_pep257/0.17.5-1
+- git:
+    local-name: ament_lint/ament_pycodestyle
+    uri: https://github.com/ros2-gbp/ament_lint-release.git
+    version: release/jazzy/ament_pycodestyle/0.17.5-1
+- git:
+    local-name: ament_lint/ament_uncrustify
+    uri: https://github.com/ros2-gbp/ament_lint-release.git
+    version: release/jazzy/ament_uncrustify/0.17.5-1
+- git:
+    local-name: ament_lint/ament_xmllint
+    uri: https://github.com/ros2-gbp/ament_lint-release.git
+    version: release/jazzy/ament_xmllint/0.17.5-1
+- git:
+    local-name: ament_package
+    uri: https://github.com/ros2-gbp/ament_package-release.git
+    version: release/jazzy/ament_package/0.16.5-1
+- git:
+    local-name: common_interfaces/actionlib_msgs
+    uri: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: release/jazzy/actionlib_msgs/5.3.7-1
+- git:
+    local-name: common_interfaces/common_interfaces
+    uri: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: release/jazzy/common_interfaces/5.3.7-1
+- git:
+    local-name: common_interfaces/diagnostic_msgs
+    uri: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: release/jazzy/diagnostic_msgs/5.3.7-1
+- git:
+    local-name: common_interfaces/geometry_msgs
+    uri: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: release/jazzy/geometry_msgs/5.3.7-1
+- git:
+    local-name: common_interfaces/nav_msgs
+    uri: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: release/jazzy/nav_msgs/5.3.7-1
+- git:
+    local-name: common_interfaces/sensor_msgs
+    uri: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: release/jazzy/sensor_msgs/5.3.7-1
+- git:
+    local-name: common_interfaces/shape_msgs
+    uri: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: release/jazzy/shape_msgs/5.3.7-1
+- git:
+    local-name: common_interfaces/std_msgs
+    uri: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: release/jazzy/std_msgs/5.3.7-1
+- git:
+    local-name: common_interfaces/std_srvs
+    uri: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: release/jazzy/std_srvs/5.3.7-1
+- git:
+    local-name: common_interfaces/stereo_msgs
+    uri: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: release/jazzy/stereo_msgs/5.3.7-1
+- git:
+    local-name: common_interfaces/trajectory_msgs
+    uri: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: release/jazzy/trajectory_msgs/5.3.7-1
+- git:
+    local-name: common_interfaces/visualization_msgs
+    uri: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: release/jazzy/visualization_msgs/5.3.7-1
+- git:
+    local-name: cyclonedds
+    uri: https://github.com/ros2-gbp/cyclonedds-release.git
+    version: release/jazzy/cyclonedds/0.10.5-1
+- git:
+    local-name: example_interfaces
+    uri: https://github.com/ros2-gbp/example_interfaces-release.git
+    version: release/jazzy/example_interfaces/0.12.0-3
+- git:
+    local-name: fastcdr
+    uri: https://github.com/ros2-gbp/fastcdr-release.git
+    version: release/jazzy/fastcdr/2.2.7-1
+- git:
+    local-name: fastrtps
+    uri: https://github.com/ros2-gbp/fastdds-release.git
+    version: release/jazzy/fastrtps/2.14.6-1
+- git:
+    local-name: foonathan_memory_vendor
+    uri: https://github.com/ros2-gbp/foonathan_memory_vendor-release.git
+    version: release/jazzy/foonathan_memory_vendor/1.3.1-3
+- git:
+    local-name: geometry2/tf2
+    uri: https://github.com/ros2-gbp/geometry2-release.git
+    version: release/jazzy/tf2/0.36.20-1
+- git:
+    local-name: geometry2/tf2_msgs
+    uri: https://github.com/ros2-gbp/geometry2-release.git
+    version: release/jazzy/tf2_msgs/0.36.20-1
+- git:
+    local-name: google_benchmark_vendor
+    uri: https://github.com/ros2-gbp/google_benchmark_vendor-release.git
+    version: release/jazzy/google_benchmark_vendor/0.5.1-1
+- git:
+    local-name: googletest/gmock_vendor
+    uri: https://github.com/ros2-gbp/googletest-release.git
+    version: release/jazzy/gmock_vendor/1.14.9000-2
+- git:
+    local-name: googletest/gtest_vendor
+    uri: https://github.com/ros2-gbp/googletest-release.git
+    version: release/jazzy/gtest_vendor/1.14.9000-2
+- git:
+    local-name: iceoryx/iceoryx_binding_c
+    uri: https://github.com/ros2-gbp/iceoryx-release.git
+    version: release/jazzy/iceoryx_binding_c/2.0.6-1
+- git:
+    local-name: iceoryx/iceoryx_hoofs
+    uri: https://github.com/ros2-gbp/iceoryx-release.git
+    version: release/jazzy/iceoryx_hoofs/2.0.6-1
+- git:
+    local-name: iceoryx/iceoryx_posh
+    uri: https://github.com/ros2-gbp/iceoryx-release.git
+    version: release/jazzy/iceoryx_posh/2.0.6-1
+- git:
+    local-name: launch/launch
+    uri: https://github.com/ros2-gbp/launch-release.git
+    version: release/jazzy/launch/3.4.10-1
+- git:
+    local-name: launch/launch_testing
+    uri: https://github.com/ros2-gbp/launch-release.git
+    version: release/jazzy/launch_testing/3.4.10-1
+- git:
+    local-name: launch/launch_testing_ament_cmake
+    uri: https://github.com/ros2-gbp/launch-release.git
+    version: release/jazzy/launch_testing_ament_cmake/3.4.10-1
+- git:
+    local-name: launch/launch_xml
+    uri: https://github.com/ros2-gbp/launch-release.git
+    version: release/jazzy/launch_xml/3.4.10-1
+- git:
+    local-name: launch/launch_yaml
+    uri: https://github.com/ros2-gbp/launch-release.git
+    version: release/jazzy/launch_yaml/3.4.10-1
+- git:
+    local-name: launch_ros/launch_ros
+    uri: https://github.com/ros2-gbp/launch_ros-release.git
+    version: release/jazzy/launch_ros/0.26.11-1
+- git:
+    local-name: launch_ros/launch_testing_ros
+    uri: https://github.com/ros2-gbp/launch_ros-release.git
+    version: release/jazzy/launch_testing_ros/0.26.11-1
+- git:
+    local-name: libyaml_vendor
+    uri: https://github.com/ros2-gbp/libyaml_vendor-release.git
+    version: release/jazzy/libyaml_vendor/1.6.3-2
+- git:
+    local-name: mimick_vendor
+    uri: https://github.com/ros2-gbp/mimick_vendor-release.git
+    version: release/jazzy/mimick_vendor/0.6.2-1
+- git:
+    local-name: osrf_pycommon
+    uri: https://github.com/ros2-gbp/osrf_pycommon-release.git
+    version: release/jazzy/osrf_pycommon/2.1.7-1
+- git:
+    local-name: osrf_testing_tools_cpp
+    uri: https://github.com/ros2-gbp/osrf_testing_tools_cpp-release.git
+    version: release/jazzy/osrf_testing_tools_cpp/2.0.0-3
+- git:
+    local-name: performance_test_fixture
+    uri: https://github.com/ros2-gbp/performance_test_fixture-release.git
+    version: release/jazzy/performance_test_fixture/0.2.1-2
+- git:
+    local-name: pybind11_vendor
+    uri: https://github.com/ros2-gbp/pybind11_vendor-release.git
+    version: release/jazzy/pybind11_vendor/3.1.3-1
+- git:
+    local-name: python_cmake_module
+    uri: https://github.com/ros2-gbp/python_cmake_module-release.git
+    version: release/jazzy/python_cmake_module/0.11.1-2
+- git:
+    local-name: rcl/rcl
+    uri: https://github.com/ros2-gbp/rcl-release.git
+    version: release/jazzy/rcl/9.2.9-1
+- git:
+    local-name: rcl/rcl_action
+    uri: https://github.com/ros2-gbp/rcl-release.git
+    version: release/jazzy/rcl_action/9.2.9-1
+- git:
+    local-name: rcl/rcl_lifecycle
+    uri: https://github.com/ros2-gbp/rcl-release.git
+    version: release/jazzy/rcl_lifecycle/9.2.9-1
+- git:
+    local-name: rcl/rcl_yaml_param_parser
+    uri: https://github.com/ros2-gbp/rcl-release.git
+    version: release/jazzy/rcl_yaml_param_parser/9.2.9-1
+- git:
+    local-name: rcl_interfaces/action_msgs
+    uri: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: release/jazzy/action_msgs/2.0.3-1
+- git:
+    local-name: rcl_interfaces/builtin_interfaces
+    uri: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: release/jazzy/builtin_interfaces/2.0.3-1
+- git:
+    local-name: rcl_interfaces/composition_interfaces
+    uri: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: release/jazzy/composition_interfaces/2.0.3-1
+- git:
+    local-name: rcl_interfaces/lifecycle_msgs
+    uri: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: release/jazzy/lifecycle_msgs/2.0.3-1
+- git:
+    local-name: rcl_interfaces/rcl_interfaces
+    uri: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: release/jazzy/rcl_interfaces/2.0.3-1
+- git:
+    local-name: rcl_interfaces/rosgraph_msgs
+    uri: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: release/jazzy/rosgraph_msgs/2.0.3-1
+- git:
+    local-name: rcl_interfaces/service_msgs
+    uri: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: release/jazzy/service_msgs/2.0.3-1
+- git:
+    local-name: rcl_interfaces/test_msgs
+    uri: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: release/jazzy/test_msgs/2.0.3-1
+- git:
+    local-name: rcl_interfaces/type_description_interfaces
+    uri: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: release/jazzy/type_description_interfaces/2.0.3-1
+- git:
+    local-name: rcl_logging/rcl_logging_interface
+    uri: https://github.com/ros2-gbp/rcl_logging-release.git
+    version: release/jazzy/rcl_logging_interface/3.1.1-1
+- git:
+    local-name: rcl_logging/rcl_logging_spdlog
+    uri: https://github.com/ros2-gbp/rcl_logging-release.git
+    version: release/jazzy/rcl_logging_spdlog/3.1.1-1
+- git:
+    local-name: rclpy
+    uri: https://github.com/ros2-gbp/rclpy-release.git
+    version: release/jazzy/rclpy/7.1.11-1
+- git:
+    local-name: rcpputils
+    uri: https://github.com/ros2-gbp/rcpputils-release.git
+    version: release/jazzy/rcpputils/2.11.3-1
+- git:
+    local-name: rcutils
+    uri: https://github.com/ros2-gbp/rcutils-release.git
+    version: release/jazzy/rcutils/6.7.5-1
+- git:
+    local-name: rmw/rmw
+    uri: https://github.com/ros2-gbp/rmw-release.git
+    version: release/jazzy/rmw/7.3.3-1
+- git:
+    local-name: rmw/rmw_implementation_cmake
+    uri: https://github.com/ros2-gbp/rmw-release.git
+    version: release/jazzy/rmw_implementation_cmake/7.3.3-1
+- git:
+    local-name: rmw_connextdds/rmw_connextdds
+    uri: https://github.com/ros2-gbp/rmw_connextdds-release.git
+    version: release/jazzy/rmw_connextdds/0.22.3-1
+- git:
+    local-name: rmw_connextdds/rmw_connextdds_common
+    uri: https://github.com/ros2-gbp/rmw_connextdds-release.git
+    version: release/jazzy/rmw_connextdds_common/0.22.3-1
+- git:
+    local-name: rmw_connextdds/rti_connext_dds_cmake_module
+    uri: https://github.com/ros2-gbp/rmw_connextdds-release.git
+    version: release/jazzy/rti_connext_dds_cmake_module/0.22.3-1
+- git:
+    local-name: rmw_cyclonedds_cpp
+    uri: https://github.com/ros2-gbp/rmw_cyclonedds-release.git
+    version: release/jazzy/rmw_cyclonedds_cpp/2.2.3-1
+- git:
+    local-name: rmw_dds_common
+    uri: https://github.com/ros2-gbp/rmw_dds_common-release.git
+    version: release/jazzy/rmw_dds_common/3.1.1-1
+- git:
+    local-name: rmw_fastrtps/rmw_fastrtps_cpp
+    uri: https://github.com/ros2-gbp/rmw_fastrtps-release.git
+    version: release/jazzy/rmw_fastrtps_cpp/8.4.3-1
+- git:
+    local-name: rmw_fastrtps/rmw_fastrtps_dynamic_cpp
+    uri: https://github.com/ros2-gbp/rmw_fastrtps-release.git
+    version: release/jazzy/rmw_fastrtps_dynamic_cpp/8.4.3-1
+- git:
+    local-name: rmw_fastrtps/rmw_fastrtps_shared_cpp
+    uri: https://github.com/ros2-gbp/rmw_fastrtps-release.git
+    version: release/jazzy/rmw_fastrtps_shared_cpp/8.4.3-1
+- git:
+    local-name: rmw_implementation
+    uri: https://github.com/ros2-gbp/rmw_implementation-release.git
+    version: release/jazzy/rmw_implementation/2.15.6-1
+- git:
+    local-name: ros2_tracing/tracetools
+    uri: https://github.com/ros2-gbp/ros2_tracing-release.git
+    version: release/jazzy/tracetools/8.2.5-1
+- git:
+    local-name: ros2cli/ros2cli
+    uri: https://github.com/ros2-gbp/ros2cli-release.git
+    version: release/jazzy/ros2cli/0.32.9-1
+- git:
+    local-name: ros2cli/ros2doctor
+    uri: https://github.com/ros2-gbp/ros2cli-release.git
+    version: release/jazzy/ros2doctor/0.32.9-1
+- git:
+    local-name: ros2cli/ros2node
+    uri: https://github.com/ros2-gbp/ros2cli-release.git
+    version: release/jazzy/ros2node/0.32.9-1
+- git:
+    local-name: ros2cli/ros2pkg
+    uri: https://github.com/ros2-gbp/ros2cli-release.git
+    version: release/jazzy/ros2pkg/0.32.9-1
+- git:
+    local-name: ros2cli/ros2run
+    uri: https://github.com/ros2-gbp/ros2cli-release.git
+    version: release/jazzy/ros2run/0.32.9-1
+- git:
+    local-name: ros2cli/ros2topic
+    uri: https://github.com/ros2-gbp/ros2cli-release.git
+    version: release/jazzy/ros2topic/0.32.9-1
+- git:
+    local-name: ros_environment
+    uri: https://github.com/ros2-gbp/ros_environment-release.git
+    version: release/jazzy/ros_environment/4.2.1-1
+- git:
+    local-name: rosidl/rosidl_adapter
+    uri: https://github.com/ros2-gbp/rosidl-release.git
+    version: release/jazzy/rosidl_adapter/4.6.7-1
+- git:
+    local-name: rosidl/rosidl_cli
+    uri: https://github.com/ros2-gbp/rosidl-release.git
+    version: release/jazzy/rosidl_cli/4.6.7-1
+- git:
+    local-name: rosidl/rosidl_cmake
+    uri: https://github.com/ros2-gbp/rosidl-release.git
+    version: release/jazzy/rosidl_cmake/4.6.7-1
+- git:
+    local-name: rosidl/rosidl_generator_c
+    uri: https://github.com/ros2-gbp/rosidl-release.git
+    version: release/jazzy/rosidl_generator_c/4.6.7-1
+- git:
+    local-name: rosidl/rosidl_generator_cpp
+    uri: https://github.com/ros2-gbp/rosidl-release.git
+    version: release/jazzy/rosidl_generator_cpp/4.6.7-1
+- git:
+    local-name: rosidl/rosidl_generator_type_description
+    uri: https://github.com/ros2-gbp/rosidl-release.git
+    version: release/jazzy/rosidl_generator_type_description/4.6.7-1
+- git:
+    local-name: rosidl/rosidl_parser
+    uri: https://github.com/ros2-gbp/rosidl-release.git
+    version: release/jazzy/rosidl_parser/4.6.7-1
+- git:
+    local-name: rosidl/rosidl_pycommon
+    uri: https://github.com/ros2-gbp/rosidl-release.git
+    version: release/jazzy/rosidl_pycommon/4.6.7-1
+- git:
+    local-name: rosidl/rosidl_runtime_c
+    uri: https://github.com/ros2-gbp/rosidl-release.git
+    version: release/jazzy/rosidl_runtime_c/4.6.7-1
+- git:
+    local-name: rosidl/rosidl_runtime_cpp
+    uri: https://github.com/ros2-gbp/rosidl-release.git
+    version: release/jazzy/rosidl_runtime_cpp/4.6.7-1
+- git:
+    local-name: rosidl/rosidl_typesupport_interface
+    uri: https://github.com/ros2-gbp/rosidl-release.git
+    version: release/jazzy/rosidl_typesupport_interface/4.6.7-1
+- git:
+    local-name: rosidl/rosidl_typesupport_introspection_c
+    uri: https://github.com/ros2-gbp/rosidl-release.git
+    version: release/jazzy/rosidl_typesupport_introspection_c/4.6.7-1
+- git:
+    local-name: rosidl/rosidl_typesupport_introspection_cpp
+    uri: https://github.com/ros2-gbp/rosidl-release.git
+    version: release/jazzy/rosidl_typesupport_introspection_cpp/4.6.7-1
+- git:
+    local-name: rosidl_core/rosidl_core_generators
+    uri: https://github.com/ros2-gbp/rosidl_core-release.git
+    version: release/jazzy/rosidl_core_generators/0.2.1-1
+- git:
+    local-name: rosidl_core/rosidl_core_runtime
+    uri: https://github.com/ros2-gbp/rosidl_core-release.git
+    version: release/jazzy/rosidl_core_runtime/0.2.1-1
+- git:
+    local-name: rosidl_defaults/rosidl_default_generators
+    uri: https://github.com/ros2-gbp/rosidl_defaults-release.git
+    version: release/jazzy/rosidl_default_generators/1.6.0-3
+- git:
+    local-name: rosidl_defaults/rosidl_default_runtime
+    uri: https://github.com/ros2-gbp/rosidl_defaults-release.git
+    version: release/jazzy/rosidl_default_runtime/1.6.0-3
+- git:
+    local-name: rosidl_dynamic_typesupport
+    uri: https://github.com/ros2-gbp/rosidl_dynamic_typesupport-release.git
+    version: release/jazzy/rosidl_dynamic_typesupport/0.1.2-3
+- git:
+    local-name: rosidl_dynamic_typesupport_fastrtps
+    uri: https://github.com/ros2-gbp/rosidl_dynamic_typesupport_fastrtps-release.git
+    version: release/jazzy/rosidl_dynamic_typesupport_fastrtps/0.1.0-3
+- git:
+    local-name: rosidl_generator_py
+    uri: https://github.com/ros2-gbp/rosidl_python-release.git
+    version: release/jazzy/rosidl_generator_py/0.22.2-1
+- git:
+    local-name: rosidl_generator_rs
+    uri: https://github.com/ros2-gbp/rosidl_rust-release.git
+    version: release/jazzy/rosidl_generator_rs/0.4.12-1
+- git:
+    local-name: rosidl_runtime_py
+    uri: https://github.com/ros2-gbp/rosidl_runtime_py-release.git
+    version: release/jazzy/rosidl_runtime_py/0.13.1-2
+- git:
+    local-name: rosidl_typesupport/rosidl_typesupport_c
+    uri: https://github.com/ros2-gbp/rosidl_typesupport-release.git
+    version: release/jazzy/rosidl_typesupport_c/3.2.2-1
+- git:
+    local-name: rosidl_typesupport/rosidl_typesupport_cpp
+    uri: https://github.com/ros2-gbp/rosidl_typesupport-release.git
+    version: release/jazzy/rosidl_typesupport_cpp/3.2.2-1
+- git:
+    local-name: rosidl_typesupport_fastrtps/fastrtps_cmake_module
+    uri: https://github.com/ros2-gbp/rosidl_typesupport_fastrtps-release.git
+    version: release/jazzy/fastrtps_cmake_module/3.6.3-1
+- git:
+    local-name: rosidl_typesupport_fastrtps/rosidl_typesupport_fastrtps_c
+    uri: https://github.com/ros2-gbp/rosidl_typesupport_fastrtps-release.git
+    version: release/jazzy/rosidl_typesupport_fastrtps_c/3.6.3-1
+- git:
+    local-name: rosidl_typesupport_fastrtps/rosidl_typesupport_fastrtps_cpp
+    uri: https://github.com/ros2-gbp/rosidl_typesupport_fastrtps-release.git
+    version: release/jazzy/rosidl_typesupport_fastrtps_cpp/3.6.3-1
+- git:
+    local-name: rpyutils
+    uri: https://github.com/ros2-gbp/rpyutils-release.git
+    version: release/jazzy/rpyutils/0.4.2-1
+- git:
+    local-name: spdlog_vendor
+    uri: https://github.com/ros2-gbp/spdlog_vendor-release.git
+    version: release/jazzy/spdlog_vendor/1.6.1-1
+- git:
+    local-name: test_interface_files
+    uri: https://github.com/ros2-gbp/test_interface_files-release.git
+    version: release/jazzy/test_interface_files/0.11.0-3
+- git:
+    local-name: uncrustify_vendor
+    uri: https://github.com/ros2-gbp/uncrustify_vendor-release.git
+    version: release/jazzy/uncrustify_vendor/3.0.1-1
+- git:
+    local-name: unique_identifier_msgs
+    uri: https://github.com/ros2-gbp/unique_identifier_msgs-release.git
+    version: release/jazzy/unique_identifier_msgs/2.5.0-3
+- git:
+    local-name: vision_msgs/vision_msgs
+    uri: https://github.com/ros2-gbp/vision_msgs-release.git
+    version: release/jazzy/vision_msgs/4.1.1-3
+
