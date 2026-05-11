@@ -1,7 +1,8 @@
 #!/bin/bash
 # Run Isaac-SIM
-export ROS_DISTRO=jazzy
-export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/isaac-sim/exts/isaacsim.ros2.bridge/jazzy/lib
+
+source /workspace/build_ws/install/setup.bash
 source /workspace/jazzy_ws/install/setup.bash
-# ./isaac-sim.sh --allow-root
+source /opt/ros/jazzy/setup.bash 
+cd /
+bash

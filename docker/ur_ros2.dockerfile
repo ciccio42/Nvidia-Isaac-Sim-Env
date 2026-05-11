@@ -7,6 +7,7 @@ ARG WS_NAME=build_ws
 ENV ROS_DISTRO=${ROS_DISTRO}
 ENV WS_NAME=${WS_NAME}
 ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+ENV ROS_DOMAIN_ID=0
 
 SHELL ["/bin/bash", "-c"]
 WORKDIR /workspace/${WS_NAME}
@@ -38,10 +39,12 @@ RUN source install/setup.bash && \
 RUN apt-get install -y \
   ros-${ROS_DISTRO}-ros2launch \
   ros-${ROS_DISTRO}-launch \
+  ros-${ROS_DISTRO}-ros2cli \
+  ros-${ROS_DISTRO}-ros2service \
+  ros-${ROS_DISTRO}-ros2cli-common-extensions \
   ros-${ROS_DISTRO}-launch-ros \
   ros-${ROS_DISTRO}-launch-xml \
-  ros-${ROS_DISTRO}-launch-yaml
-RUN apt-get install -y \
+  ros-${ROS_DISTRO}-launch-yaml \
   ros-${ROS_DISTRO}-joint-state-publisher-gui \
   ros-${ROS_DISTRO}-joint-state-publisher \
   ros-${ROS_DISTRO}-robot-state-publisher \
@@ -51,21 +54,6 @@ RUN apt-get install -y \
 RUN apt-get install -y  ros-${ROS_DISTRO}-rqt \
                         ros-${ROS_DISTRO}-rqt-graph \
                         ros-${ROS_DISTRO}-rqt-common-plugins
-
-# # RUN rm -rf /workspace/jazzy_ws/install /workspace/jazzy_ws/build /workspace/jazzy_ws/log && \
-# #     cd /workspace/jazzy_ws && \
-# #     bash /opt/ros/jazzy/setup.bash && \
-# #     colcon build \
-# #       --merge-install \
-# #       --cmake-args \
-# #         -DPYTHON_EXECUTABLE=${ISAAC_PYTHON} \
-# #         -DPYTHON_INCLUDE_DIR=$(${ISAAC_PYTHON} -c "import sysconfig; print(sysconfig.get_path('include'))") \
-# #         -DPYTHON_LIBRARY=$(${ISAAC_PYTHON} -c "import sysconfig; print(sysconfig.get_config_var('LIBDIR'))")/libpython3.11.so
-# WORKDIR /workspace/${WS_NAME}
-# RUN . install/setup.bash && \
-#     colcon build --merge-install && \
-#     . ./install/setup.bash
-
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
