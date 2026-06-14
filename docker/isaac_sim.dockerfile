@@ -1,3 +1,9 @@
+# Base Isaac Sim + ROS2 Jazzy image (Isaac Python, ROS2 toolchain, robot
+# description tooling). Used as the base for docker/isaac_sim_ur5e.dockerfile.
+#
+# Build (context = repo root):
+#   cd /home/asus-mivia/Desktop/Isaac-Sim/Nvidia-Isaac-Sim-Env
+#   docker build -t isaac-sim-custom:5.1.0 -f docker/isaac_sim.dockerfile .
 FROM nvcr.io/nvidia/isaac-sim:5.1.0
 
 USER root
@@ -94,6 +100,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python3-colcon-common-extensions \
     python3-vcstool \
     python3-argcomplete \
+    liburdfdom-tools \
     && rm -rf /var/lib/apt/lists/*
 
 # ============================================================================
@@ -145,7 +152,7 @@ RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> /root/.bashrc
 # Workspace
 # ============================================================================
 
-COPY build_ws/${ROS_DISTRO}/${ROS_DISTRO}_ws /workspace/${ROS_DISTRO}_ws
+COPY docker/build_ws/${ROS_DISTRO}/${ROS_DISTRO}_ws /workspace/${ROS_DISTRO}_ws
 
 WORKDIR /workspace/${ROS_DISTRO}_ws
 
@@ -165,23 +172,17 @@ RUN source /opt/ros/${ROS_DISTRO}/setup.bash && \
 
 
 # Install UR ROS2 packages
-RUN echo "Running apt-get update and installing xacro..."
+RUN echo "Running apt-get update and installing robot description tooling..."
 RUN apt-get update && apt install ros-$ROS_DISTRO-xacro -y
 RUN apt-get update && apt-get install -y \
     ros-${ROS_DISTRO}-ament-package \
+    ros-${ROS_DISTRO}-robot-state-publisher \
     python3-colcon-common-extensions \
     ros-${ROS_DISTRO}-rmw-cyclonedds-cpp -y 
 WORKDIR /workspace/${WS_NAME}/src
 RUN git clone https://github.com/UniversalRobots/Universal_Robots_ROS2_Description.git
 WORKDIR /workspace/${WS_NAME}/src/Universal_Robots_ROS2_Description
 RUN git checkout $ROS_DISTRO
-WORKDIR /workspace/${WS_NAME}
-RUN source /opt/ros/${ROS_DISTRO}/setup.bash && \
-    colcon build --merge-install && \
-    source install/setup.bash
 
-# ============================================================================
-# Default shell
-# ============================================================================
-COPY isaac_sim_entrypoint.sh /isaac_sim_entrypoint.sh
+COPY docker/isaac_sim_entrypoint.sh /isaac_sim_entrypoint.sh
 ENTRYPOINT ["/isaac_sim_entrypoint.sh"]

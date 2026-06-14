@@ -55,9 +55,9 @@ ros2 topic pub /my_topic std_msgs/msg/String "data: 'Hello World'"
 ```
 
 ```bash
-# Build isaac-sim against ROS2 python3.11
-cd ~/Desktop/Isaac-Sim/Nvidia-Isaac-Sim-Env/docker
-docker build -t isaac-sim-custom:5.1.0 -f isaac_sim.dockerfile .
+# Build isaac-sim against ROS2 python3.11 and include UR5e + Robotiq + platform assets
+cd ~/Desktop/Isaac-Sim/Nvidia-Isaac-Sim-Env
+docker build -t isaac-sim-custom:5.1.0 -f docker/isaac_sim.dockerfile .
 
 xhost +local:
 docker run --name isaac-sim \
@@ -104,13 +104,22 @@ ros2 launch ur_description view_ur.launch.py ur_type:=ur10e
 
 ## Run commands
 ```bash
-# 1. Run SIM
-/isaac-sim/isaac-sim.sh
+# 1. Regenerate the flattened URDF, if the description package changed
+generate_ur5e_2f_85_urdf
 
-# 2. 
-# On a new terminal
+# 2. Run Isaac Sim with the URDF importer enabled
+/isaac-sim/isaac-sim.sh --allow-root \
+    --enable isaacsim.asset.importer.urdf
+
+# 3. In Isaac Sim, import:
+# /workspace/isaac_assets/ur5e_2f_85/ur5e_2f_85_platform.urdf
+# This URDF contains the UR5e, Robotiq 2F-85 gripper, table/platform, and camera attachment.
+
+# 4. On a new terminal, if needed
 docker exec -it isaac-sim bash
-source /opt/ros/$ROS_DISTRO/setup.bash && source install/setup.bash
+source /opt/ros/$ROS_DISTRO/setup.bash
+source /workspace/jazzy_ws/install/setup.bash
+source /workspace/build_ws/install/setup.bash
 ```
 
 # Basic-Tutorial
@@ -141,4 +150,9 @@ cd IsaacLab/
 # Remove build cache
 docker builder prune 
 docker system prune
+# Start VNC server
+vncserver -geometry 1920x1080 -localhost no
+# Remove VNC server
+vncserver -list
+vncserver -kill :[ID]
 ```
