@@ -1,0 +1,11 @@
+[package]
+version = "1.0.0"
+title = "SeeDo Scene Configuration Server"
+description = "Automatically starts the ROS 2 scene configuration server for SeeDo."
+category = "SeeDo"
+
+[dependencies]
+"isaacsim.ros2.bridge" = {}
+
+[[python.module]]
+name = "seedo.scene_config"
